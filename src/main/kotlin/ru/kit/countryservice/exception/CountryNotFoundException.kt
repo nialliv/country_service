@@ -7,5 +7,5 @@ class CountryNotFoundException(countryId: Int) : BaseException(
     ApiError(
         errorCode = "country.not.found",
         description = "Country not found with id=$countryId"
-        )
+    )
 )

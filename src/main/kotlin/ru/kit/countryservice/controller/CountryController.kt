@@ -6,9 +6,9 @@ import ru.kit.countryservice.service.CountryService
 
 @RestController
 @RequestMapping("countries")
-class CountryController (
+class CountryController(
     private val countryService: CountryService
-        ){
+) {
     @GetMapping
     fun getAll(): List<CountryDTO> = countryService.getAll()
 
